@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha Segura</title>
+    <style>
+        /* Estilo do fundo com gradiente */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Garantir que as partículas fiquem atrás do conteúdo */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgb(75, 0, 130), rgb(148, 0, 211)); /* Gradiente roxo escuro */
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .password-box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Div para o fundo de partículas -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <h1>LEO MODZ CHEATS FREE KEY</h1>
+
+        <div class="password-box" id="password">LEOMODZCHEATS-TRIAL4DAYS</div>
+        <button onclick="copyPassword()">COPIAR KEY</button>
+    </div>
+
+    <!-- Inclui a biblioteca de partículas -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+    <script>
+        // Configuração das partículas
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100, // Número de partículas
+                    "density": {
+                        "enable": true,
+                        "value_area": 800 // Área de densidade das partículas
+                    }
+                },
+                "color": {
+                    "value": "#ffffff" // Cor das partículas
+                },
+                "shape": {
+                    "type": "circle", // Tipo de partículas (círculos)
+                    "stroke": {
+                        "width": 0, // Sem borda
+                        "color": "#000000" // Cor da borda (invisível por ser 0)
+                    }
+                },
+                "opacity": {
+                    "value": 0.5, // Opacidade das partículas
+                    "random": true, // Opacidade aleatória
+                    "anim": {
+                        "enable": true,
+                        "speed": 1, // Velocidade de animação
+                        "opacity_min": 0.1, // Opacidade mínima
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3, // Tamanho das partículas
+                    "random": true, // Tamanho aleatório
+                    "anim": {
+                        "enable": true,
+                        "speed": 10, // Velocidade de animação de tamanho
+                        "size_min": 0.1, // Tamanho mínimo
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true, // Habilitar links entre as partículas
+                    "distance": 150, // Distância máxima de link
+                    "color": "#ffffff", // Cor do link
+                    "opacity": 0.4, // Opacidade do link
+                    "width": 1 // Largura do link
+                },
+                "move": {
+                    "enable": true, // Habilitar movimento
+                    "speed": 3, // Velocidade de movimento das partículas
+                    "direction": "none", // Direção livre
+                    "random": false, // Sem movimento aleatório
+                    "straight": false, // Movimento não reto
+                    "out_mode": "out", // Partículas saem de área de visão
+                    "bounce": false, // Sem rebote
+                    "attract": {
+                        "enable": false // Não atrair partículas
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas", // Detecta interações no canvas
+                "events": {
+                    "onhover": {
+                        "enable": true, // Habilitar interação com hover
+                        "mode": "repulse" // Efeito de repelir partículas ao passar o mouse
+                    },
+                    "onclick": {
+                        "enable": true, // Habilitar interação ao clicar
+                        "mode": "push" // Empurrar partículas ao clicar
+                    }
+                },
+                "modes": {
+                    "repulse": {
+                        "distance": 100, // Distância de repulsão
+                        "duration": 0.4 // Duração do efeito de repulsão
+                    },
+                    "push": {
+                        "particles_nb": 4 // Número de partículas empurradas ao clicar
+                    }
+                }
+            },
+            "retina_detect": true // Detecta retina para resoluções altas
+        });
+
+        // Função para copiar a senha
+        function copyPassword() {
+            const passwordText = document.getElementById("password").innerText;
+            navigator.clipboard.writeText(passwordText).then(() => {
+                alert("KEY COPIADA COM SUCESSO!!");
+                const button = document.querySelector("button");
+                button.innerText = "KEY COPIADA!";
+                setTimeout(() => {
+                    button.innerText = "COPIAR KEY";
+                }, 2000);
+            }).catch((error) => {
+                alert("ERRO AO COPIAR A SENHA.");
+            });
+        }
+    </script>
+
+</body>
+</html>
